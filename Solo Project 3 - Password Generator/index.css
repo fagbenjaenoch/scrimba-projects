@@ -1,0 +1,74 @@
+/*
+#5a606b - Greyish color
+#10b981 - Greenish color
+#1f2937 - Background color
+#293f4c - Button background color
+
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f2937;
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30%;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+span.green {
+  display: block;
+  color: #10b981;
+}
+
+p {
+  margin-block: .5em;
+  color: #5a606b;
+  font-weight: 500;
+  font-size: 1.2em;
+  word-spacing: 1.5;
+}
+
+button.green {
+  color: #fff;
+  background: #10b981;
+  margin: 2em 0;
+  padding: 14px 7px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.results {
+  border-top: 1px solid #5a606b;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.result {
+  width: 180px;
+  background: #293f4c;
+  color: #10b981;
+  font-weight: 700;
+  text-align: center;
+  padding: 14px 7px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

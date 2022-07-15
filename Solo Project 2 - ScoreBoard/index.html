@@ -1,0 +1,33 @@
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h3>HOME</h3>
+      <span class="home-display"> </span>
+      <div class="buttons">
+        <button onclick="increment(1, 'Home')">+1</button>
+        <button onclick="increment(2, 'Home')">+2</button>
+        <button onclick="increment(3, 'Home')">+3</button>
+      </div>
+    </div>
+    <div class="timer">
+      0
+    </div>
+    <div class="section">
+      <h3>GUEST</h3>
+      <span class="guest-display"> </span>
+      <div class="buttons">
+        <button onclick="increment(1, 'Guest')">+1</button>
+        <button onclick="increment(2, 'Guest')">+2</button>
+        <button onclick="increment(3, 'Guest')">+3</button>
+      </div>
+    </div>
+  </div>
+  <p class="winning"></p>
+  <script src="index.js"></script>
+</body>
+</html>

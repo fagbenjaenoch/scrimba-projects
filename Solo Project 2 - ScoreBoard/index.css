@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  background: #00279f;
+  color: #fff;
+}
+
+.container {
+  margin-top: 6em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.home-display {
+  font-size: 2.5em;
+  padding: 1em;
+  border: 2px dashed #fff;
+}
+.guest-display {
+  font-size: 2.5em;
+  padding: 1em;
+  border: 2px dashed #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  color: inherit;
+  font-size: 1.3em;
+  background: none;
+  border: 1px solid white;
+  padding: 3px 5px;
+}
+
+.timer {
+  font-size: 2em;
+  border: 1px solid white;
+  width: 80px;
+  text-align: center;
+  padding: 20px;
+}
+
+.winning {
+  text-align: center;
+}
