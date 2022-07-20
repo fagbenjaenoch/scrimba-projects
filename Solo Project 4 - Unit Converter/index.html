@@ -1,8 +1,35 @@
+<!DOCTYPE html>
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <script src="index.js"></script>
-    </body>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="index.css">
+  <title>Solo Project | Unit Converter</title>
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <section class="convert">
+    <div class="max-width">
+      <h1>Metric/Imperial Unit Conversion</h1>
+      <input type="number" class="conversion-input" id="conversion-input">
+      <button id="convert-btn">Convert</button>
+    </div>
+  </section>
+  <section class="display">
+    <div class="conversion-cards max-width">
+      <div class="conversion-cards">
+        <h2>Length (Meter/Feet)</h2>
+        <p class="conversion-results" id="length-result"></p>
+      </div>
+      <div class="conversion-cards">
+        <h2>Volume (Liters/Gallon)</h2>
+        <p class="conversion-results" id="volume-result"></p>
+      </div>
+      <div class="conversion-cards">
+        <h2>Weight (Kilogrammes/Pounds)</h2>
+        <p class="conversion-results" id="weight-result"></p>
+      </div>
+    </div>
+  </section>
+</body>
 </html>
