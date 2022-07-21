@@ -1,3 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
+  background: #eefbfe;
+}
+
+.max-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 45em;
+}
+
+.convert {
+  background: #9a09e8;
+  color: #fff;
+  padding: 2em;
+  text-align: center;
+}
+
+.convert h1 {
+  font-size: 2.1em;
+  margin-bottom: 1em;
+}
+
+.conversion-input {
+  background: none;
+  width: 100px;
+  padding: 10px;
+  border: 1px solid #fff;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.convert-btn {
+  background: #fff;
+  color: purple;
+  width: 100px;
+  padding: 8px 3px;
+  font-size: 1em;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.conversion-cards {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.conversion-card {
+  background: #fff;
+  padding: 20px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.conversion-card h2 {
+  color: #9a09e8;
 }
