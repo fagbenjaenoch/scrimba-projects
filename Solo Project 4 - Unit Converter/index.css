@@ -42,6 +42,7 @@ body {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .convert-btn {
@@ -70,8 +71,14 @@ body {
   -moz-border-radius: 5px;
   border-radius: 5px;
   text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 .conversion-card h2 {
   color: #9a09e8;
+  margin-bottom: 10px;
+}
+
+.conversion-card p {
+  color: #141414;
 }
