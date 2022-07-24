@@ -10,10 +10,12 @@ const weightResult = document.querySelector('#weight-result')
 const conversionInput = document.querySelector('#conversion-input')
 
 function render(toBeConverted) {
-  lengthResult.textContent = toBeConverted + ' meters =  ' + Math.floor(toBeConverted * 3.281) + ' feets | ' + toBeConverted + ' feets = ' + Math.floor(toBeConverted / 3.281) + ' meters'
-  volumeResult.textContent = toBeConverted + ' liters =  ' + Math.floor(toBeConverted * 0.264) + ' gallons | ' + toBeConverted + ' gallons = ' + Math.floor(toBeConverted / 0.264) + ' liters'
-  weightResult.textContent = toBeConverted + ' kgms =  ' + Math.floor(toBeConverted * 2.204) + ' pounds | ' + toBeConverted + ' pounds = ' + Math.floor(toBeConverted / 2.204) + ' kgms'
-  toBeConverted = ''
+  const renderEl = (convVal, from, to) => {
+    return toBeConverted + ' ' + from + ' = ' + Math.floor(toBeConverted * convVal) + ' ' + to + ' | ' + toBeConverted + ' ' + to + ' = ' + Math.floor(toBeConverted / convVal) + ' ' + from
+  }
+  lengthResult.textContent = renderEl(3.281, 'meters', 'feets')
+  volumeResult.textContent = renderEl(0.264, 'liters', 'gallons')
+  weightResult.textContent = renderEl(2.204, 'kgms', 'pounds')
 }
 
 convertBtn.addEventListener("click", () => {
