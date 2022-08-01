@@ -1,5 +1,99 @@
-html, body {
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.container {
+  width: 90%;
+  max-width: 35em;
+  margin: 0 auto;
+}
+header {
+  padding: 1em 0;
+  margin-bottom: 2em;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+header > .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header #app-logo {
+  width: 70px;
+}
+
+header #user-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.post-meta {
+  margin-bottom: 1em;
+}
+
+.post-meta > .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-meta img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-meta .post-user-details {
+  font-size: .8em;
+}
+
+#post-img img {
+  width: 100%;
+}
+
+.engage {
+  margin: 1em 0px;
+}
+
+.engage .container {
+  display: flex;
+  gap: 10px;
+}
+
+.engage button,
+.engage button img {
+  width: 40px;
+  height: 40px;
+  transition: 100ms ease;
+}
+
+.engage button img:hover,
+.engage button img:focus {
+  background: red;
+  background-clip: text;
+}
+
+.comments {
+  margin: 1em 0;
+}

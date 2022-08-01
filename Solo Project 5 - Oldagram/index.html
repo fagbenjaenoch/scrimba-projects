@@ -6,8 +6,57 @@
 </head>
 <body>
   <header>
-    <img src="images/logo.png">
-    <img src="" alt="">
+    <div class="container">
+      <img src="images/logo.png" alt="Oldagram Logo" id="app-logo">
+      <img src="images/user-avatar.png" alt="User Avatar" id="user-logo">
+    </div>
   </header>
+  <main>
+    <section class="post">
+      <section class="post-meta">
+        <div class="container">
+          <img src="images/avatar-vangogh.jpg" alt="User Image" class="post-user-avatar">
+          <div class="post-user-details">
+            <p class="post-user-name bold">
+              Vincent Van Gogh
+            </p>
+            <p class="post-location">
+              Zurich, Netherlands
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="post-img">
+        <img src="images/post-vangogh.jpg" alt="Vangogh's Post">
+      </section>
+      <section class="engage">
+        <div class="container">
+          <button id="like">
+            <img src="images/icon-heart.png" alt="Like">
+          </button>
+          <button id="comment">
+            <img src="images/icon-comment.png" alt="Comment">
+          </button>
+          <button id="dm">
+            <img src="images/icon-dm.png" alt="Message">
+          </button>
+        </div>
+      </section>
+      <section class="post-likes">
+        <div class="container">
+          <p id="likes" class="bold">
+            20,153 likes
+          </p>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="container">
+          <p class="comment">
+            <span class="bold">Vincent1462</span> just took a few mushrooms lol
+          </p>
+        </div>
+      </section>
+    </section>
+  </main>
 </body>
 </html>
