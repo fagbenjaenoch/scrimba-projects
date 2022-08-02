@@ -40,7 +40,7 @@ header #app-logo {
   width: 70px;
 }
 
-header #user-logo {
+header #user-avatar {
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -90,8 +90,11 @@ header #user-logo {
 
 .engage button img:hover,
 .engage button img:focus {
-  background: red;
-  background-clip: text;
+  filter: invert(17%) sepia(97%) saturate(5791%) hue-rotate(1deg) brightness(101%) contrast(123%);
+}
+
+.picked {
+  filter: invert(17%) sepia(97%) saturate(5791%) hue-rotate(1deg) brightness(101%) contrast(123%);
 }
 
 .comments {
