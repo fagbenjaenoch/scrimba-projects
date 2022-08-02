@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+html, body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #F5F5F5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 10px 0;
+}
+header {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375px;
+    height: 67px;
+    background-color: #FFF;
+    border-bottom: 1px solid #C6C6C6;
+}
+header .logo {
+    width: 127px;
+}
+.avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 11px;
+}
+.post-container {
+    width: 375px;
+    height: auto;
+    margin: 0 auto;
+    background: #FFF;
+    border-bottom: 20px solid #C6C6C6;
+}
+.post-info {
+    display: flex;
+}
+.post-info-name {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 11px 7px 0 7px;
+}
+.post-info-location {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 7px;
+}
+.post-img {
+    width: 375px;
+    height: 375px;
+}
+.post-body {
+    width: 346px;
+    margin: 14px auto;
+}
+
+.icons button {
+    background: none;
+    border: none;
+}
+.icons img {
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+}
+.icons .heart:hover,
+.icons .heart:focus,
+.icons .comment:hover,
+.icons .comment:focus,
+.icons .dm:hover,
+.icons .dm:focus {
+    opacity: .5;
+}
+.like-count, .caption {
+    line-height: 25px
+}
+.caption .username {
+    font-weight: 700;
+}
