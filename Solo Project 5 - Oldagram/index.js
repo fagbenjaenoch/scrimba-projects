@@ -26,15 +26,53 @@ const posts = [{
     likes: 152
   }]
 
-const main = document.querySelector('main')
+const postsEl = document.querySelector('.posts')
 
-function render( {
-  name, username, location, avatar, post, comment, likes
-}) {
-  const newPost = document.createElement('section').setAttribute('class', 'post')
-  newPost.innerHTML =
-  "<section class='post-meta'><div class='container'><img src= '"+ avatar +"' alt='User Image' class='post-user-avatar' id='post-user-avatar'><div class='post-user-details'><p class='post-user-name bold'>" + name + "</p> <p class ='post-location'>" + location + "</p></div></div></section><section id ='post-img'><img src ='" + post + "' alt =" + name + "'s Post></section><section class = 'engage'><div class ='container'><button id = 'like'><img src = 'images/icon-heart.png' alt = 'Like'></button><button id = 'comment'> <img src = 'images/icon-comment.png' alt = 'Comment'> </button><button id = dm><img src = 'images/icon-dm.png' alt = 'Message'></button></div> </section><section class = 'post-likes' ><div class = 'container'> <p id = likes class = bold>"+ likes + "likes </p></div></section><section class = 'comments'><div class ='container'><p class = 'comment'><span id = 'username' class ='bold'>"+ username +"</span> just took a few mushrooms lol </p></div></section>"
-  main.appendChild(newPost)
+function render() {
+    posts.forEach(({name, username, location, avatar, post, comment}) => {
+    postsEl.innerHTML += `<section class="post-meta">
+        <div class="container">
+          <img src="${avatar}" alt="User Image" class="post-user-avatar" id="post-user-avatar">
+          <div class="post-user-details">
+            <p class="post-user-name bold">
+              ${name}
+            </p>
+            <p class="post-location">
+              ${location}
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="post-img">
+        <img src="${post}" alt="${name.match(/\w+/)[0]}'s Post">
+      </section>
+      <section class="engage">
+        <div class="container">
+          <button id="like">
+            <img src="images/icon-heart.png" alt="Like">
+          </button>
+          <button id="comment">
+            <img src="images/icon-comment.png" alt="Comment">
+          </button>
+          <button id="dm">
+            <img src="images/icon-dm.png" alt="Message">
+          </button>
+        </div>
+      </section>
+      <section class="post-likes">
+        <div class="container">
+          <p id="likes" class="bold">
+            ${likes}
+          </p>
+        </div>
+      </section>
+      <section class="comments">
+        <div class="container">
+          <p class="comment">
+            <span id="username" class="bold">${username}<span> ${comment}
+          </p>
+        </div>
+      </section>`
+    })
 }
 
-posts.forEach(post => render(post))
