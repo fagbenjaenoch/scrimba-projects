@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 150px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin: 10px
+}
+
+h2 span {
+    display: block;
+    font-size: smaller;
+    font-weight: 200;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+.margin {
+    margin-left: 25px;
+}
+
+header .avatar {
+    margin-right: 25px;
+}
+
+section h3,
+p {
+    margin-left: 10px;
+}
+
+p {
+    font-weight: bold;
+}
+
+p span {
+    font-weight: 200;
+}
+
+/* Containers */
+
+.container {
+    min-width: 360px;
+    max-width: 600px;
+    margin: 5px auto;
+}
+
+.header-container {
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container-end {
+    border-bottom: 30px solid lightgray;
+    display: block;
+    margin: auto;
+}
+
+.main-image {
+    min-width: 360px;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Buttons actions and styles */
+.button {
+    width: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+    filter: opacity(.5) drop-shadow(0 0 0 white);
+}
+
+.button:active {
+    filter: opacity(.5) drop-shadow(0 0 0 red);
+}
+

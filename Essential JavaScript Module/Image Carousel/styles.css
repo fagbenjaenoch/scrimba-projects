@@ -1,0 +1,65 @@
+/*
+Styling the Carousel
+
+1) Set a max-width of 600px & position relative on the div 'carousel'
+2) Hide all 'carousel-item' divs
+3) Make sure all images inside 'carousel-item' have a max-width that matches the main 
+'carousel' div
+4) All images within 'carousel-item' must be responsive, so think about setting a 
+max-width on the images and how you'd make the image 100% width of 'carousel-item' 
+5) We want the first 'carousel-item' to be visible, think about the class we added to the first item. Make sure that class is always shown
+6) The 'carousel-actions' needs to be on top of the slider, so think about positioning 
+and how you can use relative/absolute positioning to put the 'carousel-actions' on top of 
+the slider
+7) Make some beautiful buttons!
+8) Space those buttons from the left & right - we want to make sure they're not touching 
+the edges of the slides, but adequately spaced
+*/
+
+.carousel {
+    max-width: 600px;
+    position: relative;
+}
+
+.carousel .carousel-item,
+.carousel .carousel-item-hidden {
+    display: none;
+}
+
+.carousel .carousel-item-visible {
+    display: block;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: white;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+.carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;   
+}
