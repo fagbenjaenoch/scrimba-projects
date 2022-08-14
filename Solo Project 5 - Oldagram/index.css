@@ -46,6 +46,10 @@ header #user-avatar {
   border-radius: 50%;
 }
 
+main > * + * {
+  margin-top: 10em;
+}
+
 .post-meta {
   margin-bottom: 1em;
 }

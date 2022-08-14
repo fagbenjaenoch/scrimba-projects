@@ -26,12 +26,12 @@ const posts = [{
     likes: 152
   }]
 
-const postEl = document.querySelector('.post')
+const main = document.querySelector('main')
 
 function render() {
     postEl.innerHTML = ''
     posts.forEach(({name, username, location, avatar, post, comment, likes}) => {
-    postEl.innerHTML += `<section class="post-meta">
+    main.innerHTML += `<section class="post-meta">
         <div class="container">
           <img src="${avatar}" alt="User Image" class="post-user-avatar" id="post-user-avatar">
           <div class="post-user-details">
