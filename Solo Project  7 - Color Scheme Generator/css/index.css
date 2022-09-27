@@ -1,0 +1,44 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin-block: 1em;
+  text-align: center;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  outline: 1px solid pink;
+}
+
+.header {
+  padding-block: .5em;
+  outline: 1px solid green;
+}
+
+.header > form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-input {
+  height: 40px;
+}
+
+.form-input:first-child {
+  width: 60px;
+}
+
+.form-input:nth-child(2) {
+  width: 230px;
+}
