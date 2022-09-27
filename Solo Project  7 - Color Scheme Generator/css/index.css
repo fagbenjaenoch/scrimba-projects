@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background: #eee;
+}
+
 input,
 select,
 button {
@@ -22,13 +26,13 @@ button {
 main {
   width: 80%;
   margin: 0 auto;
-  outline: 1px solid pink;
+  background: #fff;
+  border-radius: 6px;
 }
 
 .header {
   padding-block: .5em;
   padding-inline: .2em;
-  outline: 1px solid green;
 }
 
 .header > form {
@@ -47,7 +51,28 @@ main {
 }
 
 .form-input:nth-child(2) {
-  width: 500px;
+  flex-grow: 2;
 }
 
-.colors {}
+.colors {
+  padding-inline: .2em;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.colors > * {
+  flex: 1 1 auto;
+}
+
+.color-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+.color-display {
+  background: pink;
+  flex: 3 1 auto;
+}
