@@ -1,9 +1,10 @@
 const btn = document.querySelector('#sumbit')
 const seedColorInput = document.querySelector('#seed-color')
 const modeInput = document.querySelector('#mode')
-const colors = document.querySelector('.colors')
+const colorsEl = document.querySelector('.colors')
 
-btn.addEventListener('click', () => {
+btn.addEventListener('click', (e) => {
+  // e.preventDefault()
   const seedColor = seedColorInput.value
   const mode = modeInput.value
   //alert('Button Clicked')
@@ -12,13 +13,12 @@ btn.addEventListener('click', () => {
     .then(res => res.json())
     .then(result => {
       //alert(result)
-      const colorArray = result.colors
-      colors.innerHTML = colorArray.map(color => {
-        let hexCode = color.hex
+      const { colors } = result
+      colorsEl.innerHTML = colors.map(({ hex }) => {
         `
           <div class="color-card">
-	        <div class="color-display" style="${hexCode}"></div>
-	        <p class="color-code">${hexCode}</p>
+	        <div class="color-display" style="${hex}"></div>
+	        <p class="color-code">${hex}</p>
 	      </div>
         `
       }).join('')
