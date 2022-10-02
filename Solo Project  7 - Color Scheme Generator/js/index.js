@@ -5,10 +5,12 @@ const colorsEl = document.querySelector('.colors')
 
 btn.addEventListener('click', (e) => {
   e.preventDefault()
+  //alert('Button Clicked')
+})
+
+function getApi() {
   const seedColor = seedColorInput.value
   const mode = modeInput.value
-  //alert('Button Clicked')
-  
   fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor}&mode=${mode}&count=5&format=json`)
     .then(res => res.json())
     .then(result => {
@@ -24,4 +26,5 @@ btn.addEventListener('click', (e) => {
       }).join('')
     })
     .catch(err => alert(err))
-})
+}
+getApi()
