@@ -9,7 +9,7 @@ btn.addEventListener('click', (e) => {
   const mode = modeInput.value
   //alert('Button Clicked')
   
-  fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor.slice(2,5)}&mode=${mode}&count=5&format=json`)
+  fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor}&mode=${mode}&count=5&format=json`)
     .then(res => res.json())
     .then(result => {
       //alert(result)
