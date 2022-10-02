@@ -4,7 +4,7 @@ const modeInput = document.querySelector('#mode')
 const colorsEl = document.querySelector('.colors')
 
 btn.addEventListener('click', (e) => {
-  // e.preventDefault()
+  e.preventDefault()
   const seedColor = seedColorInput.value
   const mode = modeInput.value
   //alert('Button Clicked')
