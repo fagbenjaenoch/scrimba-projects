@@ -17,8 +17,8 @@ btn.addEventListener('click', (e) => {
       colorsEl.innerHTML = colors.map(({ hex }) => {
         `
           <div class="color-card">
-	        <div class="color-display" style="${hex}"></div>
-	        <p class="color-code">${hex}</p>
+	          <div class="color-display" style="${hex}"></div>
+	          <p class="color-code">${hex}</p>
 	      </div>
         `
       }).join('')
