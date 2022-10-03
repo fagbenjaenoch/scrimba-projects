@@ -2,8 +2,9 @@ const btn = document.querySelector('#sumbit')
 const seedColorInput = document.querySelector('#seed-color')
 const modeInput = document.querySelector('#mode')
 const colorsEl = document.querySelector('.colors')
+const form = document.querySelector('form')
 
-btn.addEventListener('click', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault()
   const seedColor = seedColorInput.value
   const mode = modeInput.value
