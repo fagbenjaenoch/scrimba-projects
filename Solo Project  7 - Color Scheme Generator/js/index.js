@@ -4,7 +4,7 @@ const modeInput = document.querySelector('#mode')
 const colorsEl = document.querySelector('.colors')
 const form = document.querySelector('#color-form')
 
-fetch(`https://www.thecolorapi.com/scheme?hex=${seedColor}&mode=${mode}&count=5&format=json`)
+fetch(`https://www.thecolorapi.com/scheme?hex=#fab4c2&mode=quad&count=5&format=json`)
     .then(res => res.json())
     .then(result => {
       //alert(result)
